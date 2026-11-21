@@ -79,15 +79,16 @@ h1 .w:nth-child(2) i{animation-delay:.58s;color:var(--accent)}
 .edu li span.nw{font-size:inherit;white-space:nowrap}
 .links{display:grid;gap:8px}
 .lrow{display:flex;flex-wrap:wrap;gap:8px}
-.links .c{display:inline-flex;align-items:stretch;height:38px;box-sizing:border-box;background:var(--surface);border:1px solid var(--line);transition:border-color .2s,transform .2s}
+.links .c{position:relative;display:inline-flex;align-items:center;height:38px;box-sizing:border-box;background:var(--surface);border:1px solid var(--line);transition:border-color .2s,transform .2s}
+.links .c.hc{padding-right:30px}
 .links .c:hover{border-color:var(--accent);transform:translateY(-2px)}
 .links a{display:inline-flex;align-items:center;gap:8px;padding-inline:5px 10px;text-decoration:none;font-size:.84rem;font-weight:500;white-space:nowrap;font-variant-numeric:tabular-nums}
 .links a svg{width:26px;height:26px;padding:5px;background:var(--accent);fill:none;stroke:#fff;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;transition:background .2s}
 .links a:hover svg{background:var(--ink)}
 .links small{color:var(--muted);font-size:.82em;font-weight:400;margin-inline-end:3px}
-.copy{flex:0 0 30px;align-self:stretch;height:100%;display:flex;align-items:center;justify-content:center;border-inline-start:1px solid var(--line);color:var(--muted);transition:background .2s,color .2s}
+.copy{position:absolute;top:0;right:0;bottom:0;width:30px;height:auto;box-sizing:border-box;display:flex;align-items:center;justify-content:center;border:0;border-left:1px solid var(--line);color:var(--muted);line-height:0;transition:background .2s,color .2s}
 .copy:hover{background:var(--accent-soft,#DDF1EE);color:var(--accent-ink)}
-.copy svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.copy svg{display:block;flex:none;width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .copy .i-ok{display:none}
 .copy.done{background:var(--accent);color:#fff}
 .copy.done .i-copy{display:none}
@@ -391,9 +392,9 @@ h4{font-size:1.1rem;font-weight:650;line-height:1.3;margin-block:2px}
         <div class="contact">
           <span class="mono">Contact</span>
           <div class="links">
-            <div class="lrow"><div class="c"><a href="mailto:hasanabufares.01@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3z M3 7l9 7 9-7"/></svg><span>hasanabufares.01@gmail.com</span></a><button type="button" class="copy" data-copy="hasanabufares.01@gmail.com" aria-label="Copy email address"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="i-copy" d="M9 9h11v11H9z M5 15H4V4h11v1"/><path class="i-ok" d="M5 12.500l4.500 4.500L19 7.500"/></svg></button></div></div>
+            <div class="lrow"><div class="c hc"><a href="mailto:hasanabufares.01@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3z M3 7l9 7 9-7"/></svg><span>hasanabufares.01@gmail.com</span></a><button type="button" class="copy" data-copy="hasanabufares.01@gmail.com" aria-label="Copy email address"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="i-copy" d="M9 9h11v11H9z M5 15H4V4h11v1"/><path class="i-ok" d="M5 12.500l4.500 4.500L19 7.500"/></svg></button></div></div>
             <div class="lrow"><div class="c"><a href="https://www.linkedin.com/in/hasan-abofares/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.600 8 7"/></svg><span>LinkedIn</span></a></div><div class="c"><a href="https://www.instagram.com/hasan_abofares/" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3.500l1.500-2h6l1.500 2H20v11H4z"/><circle cx="12" cy="13.500" r="3.500"/></svg><span>@hasan_abofares</span></a></div></div>
-            <div class="lrow"><div class="c"><a href="https://wa.me/962790667978" title="Open in WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.800 13.500L3 21l4.700-1.200A9 9 0 1 0 12 3z"/><path d="M8.500 12h.01 M12 12h.01 M15.500 12h.01"/></svg><span><small>Jordan</small> +962 79 066 7978</span></a><button type="button" class="copy" data-copy="+962790667978" aria-label="Copy Jordan number"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="i-copy" d="M9 9h11v11H9z M5 15H4V4h11v1"/><path class="i-ok" d="M5 12.500l4.500 4.500L19 7.500"/></svg></button></div><div class="c"><a href="https://wa.me/966538766637" title="Open in WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.800 13.500L3 21l4.700-1.200A9 9 0 1 0 12 3z"/><path d="M8.500 12h.01 M12 12h.01 M15.500 12h.01"/></svg><span><small>Saudi</small> +966 53 876 6637</span></a><button type="button" class="copy" data-copy="+966538766637" aria-label="Copy Saudi number"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="i-copy" d="M9 9h11v11H9z M5 15H4V4h11v1"/><path class="i-ok" d="M5 12.500l4.500 4.500L19 7.500"/></svg></button></div></div>
+            <div class="lrow"><div class="c hc"><a href="https://wa.me/962790667978" title="Open in WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.800 13.500L3 21l4.700-1.200A9 9 0 1 0 12 3z"/><path d="M8.500 12h.01 M12 12h.01 M15.500 12h.01"/></svg><span><small>Jordan</small> +962 79 066 7978</span></a><button type="button" class="copy" data-copy="+962790667978" aria-label="Copy Jordan number"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="i-copy" d="M9 9h11v11H9z M5 15H4V4h11v1"/><path class="i-ok" d="M5 12.500l4.500 4.500L19 7.500"/></svg></button></div><div class="c hc"><a href="https://wa.me/966538766637" title="Open in WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.800 13.500L3 21l4.700-1.200A9 9 0 1 0 12 3z"/><path d="M8.500 12h.01 M12 12h.01 M15.500 12h.01"/></svg><span><small>Saudi</small> +966 53 876 6637</span></a><button type="button" class="copy" data-copy="+966538766637" aria-label="Copy Saudi number"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="i-copy" d="M9 9h11v11H9z M5 15H4V4h11v1"/><path class="i-ok" d="M5 12.500l4.500 4.500L19 7.500"/></svg></button></div></div>
           </div>
           <span class="copied" role="status" aria-live="polite"></span>
         </div>
